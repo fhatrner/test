@@ -1,0 +1,28 @@
+Scenario: la hora del dia transformada a texto
+given dada la hora
+when verificamos si es a antes de 6 pero despues de 0
+then obtenemos "Night"
+
+
+Scenario: la hora del dia transformada a texto
+given dada la hora
+when verificamos si son menos de 12 pero mas de las 6
+then obtenemos "Morning"
+
+
+Scenario: la hora del dia transformada a texto
+given dada la hora
+when verificamos si son mas de las 12 pero menos que 18
+then obtenemos "Afternoon"
+
+
+Scenario: la hora del dia transformada a texto
+given dada la hora
+when verificamos si son mas de las 18
+then obtenemos "Evening"
+
+
+Scenario: la hora del dia transformada a texto
+given dada la hora
+when verificamos si la hora no esta en el rango de las 24 horas
+then obtenemos "invalid hour"
